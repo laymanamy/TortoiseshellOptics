@@ -25,7 +25,8 @@ header {
 
 .logo {
   display: flex;
-  padding-top: 1rem;
+  align-items: center;
+  padding: 1rem 0;
 }
 
 .logo img {
@@ -58,6 +59,10 @@ a {
   height: 30rem;
 }
 
+#main-banner-content {
+  display: flex;
+  justify-content: flex-end;
+}
 #main-banner-content h1{
   background-color: white;
   font-size: 2rem;
@@ -66,4 +71,75 @@ a {
   font-weight: bold;
   position: relative;
   top: 10rem;
+  margin-right: -2rem;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  height: 8rem;
+}
+
+.services .exams img {
+  width: 3.5rem;
+}
+
+.services .fittings img,
+.services .delivery img {
+  width: 5rem;
+}
+
+.services img {
+  margin-left: 6rem;
+}
+
+.services div {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services p {
+  margin-left: 6rem;
+  margin-top: 1.5rem;
+}
+
+.main-website {
+  display: flex;
+
+}
+
+.main-website h3 {
+  background-color: cadetblue;
+  width: 10rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.philosophy, .appointments {
+  margin: 0 2.5rem;
+  width: 35%;
+  margin-bottom: 5rem;
+}
+
+.appointments {
+  margin-left: 5%;
+}
+
+footer {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
 }
