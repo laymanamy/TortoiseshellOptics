@@ -51,9 +51,12 @@ a {
   text-decoration: none;
 }
 
+header nav ul.sandwich {
+  display: none;
+}
+
 .main-banner {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 30rem;
@@ -63,6 +66,7 @@ a {
   display: flex;
   justify-content: flex-end;
 }
+
 #main-banner-content h1{
   background-color: white;
   font-size: 2rem;
@@ -73,6 +77,8 @@ a {
   top: 10rem;
   margin-right: -2rem;
 }
+
+
 
 .services {
   display: flex;
@@ -133,13 +139,145 @@ a {
   margin-left: 5%;
 }
 
-footer {
-  background-color: azure;
-  display: flex;
-  align-items: center;
+
+
+footer{
+	background-color: azure;
+	width: 960px;
+	margin: 0 auto;
+	padding: 4rem;
+	/* to vertically align the navigation elements: */
+	display: flex;
+	align-items: center;
 }
 
-footer img {
-  height: 1.5rem;
-  padding: 4rem 1rem 4rem 4rem;
+footer img{
+	height: 1.5rem;
+	margin-right: 1rem;
+}
+
+@media only screen and (max-width: 960px) {
+  .main-banner {
+		height: 22rem;
+		padding-top: 0;
+	}
+	.main-banner header {
+		width: 100%;
+	}
+	#main-banner-content {
+		width:100%;
+	}
+  header {
+    top: 0;
+  }
+	#main-banner-content h1{
+		padding: 0.75rem 4rem;
+		top: 5rem;
+		margin-right: 2rem;
+    font-size: 1.33rem
+	}
+  .services {
+    width: 100%;
+  }
+  .main-website {
+    width: 100%;
+  }
+  footer {
+    width: calc(100% - 8rem);
+  }
+}
+
+@media only screen and (max-width: 770px) {
+	header nav ul{
+		display: none;
+	}
+	header nav ul.sandwich{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 630px) {
+	.main-banner{
+		height: 17rem;
+	}
+	header .logo h3{
+		display: none;
+	}
+	#main-banner-content {
+		padding: 0;
+		margin: 0;
+		top: 9rem;
+		width: 100%;
+		text-align: center;
+	}
+	#main-banner-content h1{
+		font-size: 1rem;
+		margin:1rem 0;
+	}
+
+  .services {
+    display: inline-block;
+    justify-content: center;
+
+  }
+
+  .services.exams {
+    margin-top: 3.77rem;
+  }
+
+  .services.fittings {
+    margin: 1.54rem 0;
+  }
+
+  .services.delivery {
+    margin-bottom: 3.77rem;
+  }
+
+  .main-website {
+    display: inline-block;
+    width: 100%;
+		padding:0;
+		margin:0;
+		margin-bottom: 4rem;
+  }
+
+  .main-website .philosophy{
+    margin-top: 7.5rem;
+  }
+
+  .main-website .philosophy h2 {
+    width: 100%;
+    padding: 0.5rem 0;
+		text-align: center;
+  }
+
+  .main-website .philosophy p {
+    padding: 1rem;
+  }
+
+  .main-website .appointments{
+    margin-top: 4rem;
+  }
+
+  .main-website .appointments h2 {
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  .main-website .appointments p {
+    padding: 1rem;
+  }
+
+
+  footer {
+    justify-content: center;
+  }
+
+  footer h4 {
+    display: none;
+  }
+
+
+
 }
