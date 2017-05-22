@@ -220,16 +220,16 @@ footer img{
     justify-content: center;
 
   }
-
-  .services.exams {
+/*the following sections don't seem to be working*/
+  .services .exams {
     margin-top: 3.77rem;
   }
 
-  .services.fittings {
+  .services .fittings {
     margin: 1.54rem 0;
   }
 
-  .services.delivery {
+  .services .delivery {
     margin-bottom: 3.77rem;
   }
 
@@ -241,8 +241,9 @@ footer img{
 		margin-bottom: 4rem;
   }
 
-  .main-website .philosophy{
-    margin-top: 7.5rem;
+  .main-website .philosophy, .main-website .appointments {
+    margin: 7.5rem 0;
+    width: 100%;
   }
 
   .main-website .philosophy h2 {
@@ -268,6 +269,11 @@ footer img{
   .main-website .appointments p {
     padding: 1rem;
   }
+
+  .main-website h3 {
+    width: 100%;
+  }
+
 
 
   footer {
